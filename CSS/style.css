@@ -1,0 +1,102 @@
+/* Estilos del carrusel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.carousel-slide {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  font-size: 14px; /* Disminuye el tamaño de la fuente a 14px */
+}
+
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Disminuye el tamaño de la fuente a 14px */
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para las flechas de navegación */
+.carousel-prev,
+.carousel-next {
+  text-decoration: none;
+  font-size: 28px; /* Disminuye el tamaño de las flechas a 16px */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Establecer un tamaño fijo de 170x170 para las imágenes */
+.carousel-slide img {
+  width: 170px;
+  height: 170px;
+}
+
+/* Estilos para los títulos h3 en el carrusel */
+.carousel-slide h3 {
+  font-size: 12px; /* Ajusta el tamaño de fuente según tu preferencia */
+  margin: 10px 0; /* Ajusta el margen si es necesario */
+}
+
+/* Estilos para los productos en el carrusel */
+.carousel-slide {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  font-size: 14px;
+  transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos para el efecto de escala */
+}
+
+/* Al hacer hover sobre el producto, se agrandará */
+.carousel-slide:hover {
+  transform: scale(1.1); /* Aumenta el tamaño en un 10% al hacer hover */
+}
+
+/* Estilos para los botones de compra */
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}

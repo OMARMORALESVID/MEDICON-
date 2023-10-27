@@ -1,0 +1,300 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    zoom: 100%; /* Añade un zoom para reiniciar el nivel de zoom a 100% */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Header */
+header {
+    background-color: #F5F7F8;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Establece el contexto de posicionamiento */
+    font-size: 17px; /* Aumenta el tamaño de la letra */
+}
+
+/* Logo */
+.logo {
+    margin: 0;
+    left: 18px;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta verticalmente para centrar */
+    width: 45px; /* Establece un ancho fijo */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    position: absolute; /* Establece la posición absoluta */
+}
+
+/* Imagen del footer */
+.footer-image img {
+    max-width: 10%; /* Establece el ancho máximo */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    position: absolute; /* Establece la posición absoluta */
+    left: 0; /* Alinea a la izquierda */
+    top: 30%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta verticalmente para centrar */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: -1;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+nav li a:hover {
+    color: green;
+}
+
+nav li a:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: center right;
+}
+
+/* Contenido principal */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Productos */
+.product {
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el botón del footer */
+.custom-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.custom-button img {
+    max-width: 20px;
+    max-height: 50%;
+    margin-right: 5px;
+}
+
+.custom-button:hover {
+    background-color: darkgreen;
+}
+
+/* Header con título */
+.top-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+}
+
+/* Texto rotativo */
+.rotating-text {
+    display: inline-block;
+}
+
+/* Banner de derechos de autor */
+.copyright-banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Subtítulo azul */
+.blue-subtitle {
+    color: rgb(0, 90, 152);
+    text-align: center;
+}
+
+/* Cuadro de texto */
+/* Estilos del cuadro */
+.box {
+    background-color: #fff; /* Color de fondo azul */
+    color:  black; /* Color del texto blanco */
+    border: 2px solid #F5F7F8; /* Borde con color más oscuro */
+    border-radius: 15px; /* Borde redondeado */
+    padding: 20px; /* Aumentamos el espacio interno */
+    width: 60%; /* Ancho relativo */
+    margin: 0 auto;
+    font-size: 16px; /* Tamaño de fuente ligeramente más grande */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave con más profundidad */
+    max-width: 400px; /* Ancho máximo */
+
+    /* Estilo para el texto dentro del cuadro */
+    p {
+        margin: 20px 0; /* Margen superior e inferior más equilibrado */
+        line-height: 24px; /* Mayor espaciado entre líneas */
+    }
+}
+
+/* Estilo para el botón */
+.box button {
+    background: #0056b3; /* Color de fondo del botón más oscuro */
+    color: #fff; /* Color del texto del botón blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Separación entre el texto y el botón */
+}
+
+.box button:hover {
+    background: #004292; /* Color de fondo del botón al pasar el cursor */
+}
+
+
+/* Resto de tu código... */
+
+/* Banner con botón en imagen */
+.banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Establece el contexto de posicionamiento */
+}
+
+.custom-button-in-image {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 690px; /* Ajusta la distancia desde la izquierda */
+    display: flex;
+    align-items: center;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s;
+    max-width: 250px;
+    text-align: center;
+}
+.custom-button-in-image img {
+    max-width: 50px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.custom-button-in-image:hover {
+    background-color: darkgreen;
+}
+
+.button-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+}
+
+/* Hace que el footer tenga tres columnas y sea responsive */
+.footer-column {
+    text-align: center;
+    margin: 3px;
+    flex-basis: 30%; /* Ancho de cada columna en porcentaje */
+    max-width: 26%; /* Ancho máximo de cada columna en porcentaje */
+}
+
+/* Estilo para el texto dentro del botón del footer */
+.custom-button span {
+    font-size: 12px;
+}
+
+/* Hace que el texto en el cuadro sea responsive */
+.small-text {
+    font-size: 8px;
+    max-width: 100%; /* Ancho máximo del texto */
+}
+
+/* Alinea el botón del footer al centro horizontalmente */
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 100% zoom */
+body {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    position: relative; /* Establece el contexto de posicionamiento */
+}
+  
+footer img {
+    max-width: 6%; /* Establece el ancho máximo al 5% */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    position: absolute; /* Establece la posición absoluta */
+    left: 0; /* Alinea a la izquierda */
+    top: 30%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta verticalmente para centrar */
+}
+
+/** carrito **/
+.otra-imagen {
+    position: absolute;
+    top: 20px; /* Agrega un margen de 20px desde la parte superior */
+    right: 20px; /* Agrega un margen de 20px desde el borde derecho del header */
+    width: 30px; /* Establece el ancho deseado, por ejemplo, 30px */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+}
+

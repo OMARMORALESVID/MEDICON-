@@ -1,0 +1,6 @@
+.encabezado-carrito {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Ajusta la altura para centrar verticalmente */
+}

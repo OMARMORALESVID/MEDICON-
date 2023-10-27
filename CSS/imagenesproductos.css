@@ -1,0 +1,6 @@
+.producto img {
+    max-width: 170px; /* Establece el ancho máximo en 170px */
+    max-height: 170px; /* Establece la altura máxima en 170px */
+    width: auto; /* Permite que el ancho se ajuste automáticamente para mantener la relación de aspecto */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+}
